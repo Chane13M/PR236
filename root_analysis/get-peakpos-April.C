@@ -26,12 +26,12 @@
   Double_t rangehi=fitcombinedhi;     // range of TF1 fit
 */
 
-//PR260, 0degr, 12C for Mylay and 12C calibration
-  Int_t run_no[]={1155,1156};
-  Double_t fitgauslow=742;  // to define range where gauss fitting is done
-  Double_t fitgaushi=745;   // to define range where gauss fitting is done
-  Double_t fitcombinedlow=740;    // range over which fitting is performed
-  Double_t fitcombinedhi=747;	  // range over which fitting is performed
+//PR236 for 24Mg
+  Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
+  Double_t fitgauslow=678;  // to define range where gauss fitting is done
+  Double_t fitgaushi=685;   // to define range where gauss fitting is done
+  Double_t fitcombinedlow=676;    // range over which fitting is performed
+  Double_t fitcombinedhi=686;	  // range over which fitting is performed
   Double_t rangelow=fitcombinedlow;    // range of TF1 fit
   Double_t rangehi=fitcombinedhi;     // range of TF1 fit
 
@@ -94,7 +94,7 @@
   for(Int_t i=0;i<nrofruns;i++)	{
 	  sprintf(text,"-------- Fitting run nr %4d:",run_no[i]);
           cout << text << endl;
-	  sprintf(name,"~/K600/DATA/PR260/ROOT/sorted0%4d.root",run_no[i]);
+	  sprintf(name,"~/K600/Data/PR236/sorted0%4d.root",run_no[i]);
 	  TFile *_file0 = TFile::Open(name);     
 
 	  cout<<"First fitting a single gaussian..."<<endl;

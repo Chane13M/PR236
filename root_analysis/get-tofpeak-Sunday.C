@@ -18,7 +18,7 @@
 	  TFile *_file0 = TFile::Open(name);     
   	  TH1F *htof = new TH1F("htof","TOF",1000,4500.,5500.);
           DATA->Draw("tof>>htof","pad1<500","");
-	  htof->Fit("gaus","QR","",4600,4800);  
+	  htof->Fit("gaus","QR","",4630,4745);  
 
 	  gaus->GetParameters(par);
           peakposition[i] = par[1];
