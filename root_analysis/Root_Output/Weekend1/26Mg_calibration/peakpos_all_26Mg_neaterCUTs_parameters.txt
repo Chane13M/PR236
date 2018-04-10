@@ -1,0 +1,28 @@
+ FCN=1451.28 FROM MIGRAD    STATUS=CONVERGED     135 CALLS         136 TOTAL
+                     EDM=6.14708e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   1.7 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     3.85073e+02   8.46328e+00   1.54550e-02   6.21067e-05
+   2  Mean         6.52147e+02   1.48202e-02   3.71332e-05   1.06130e-02
+   3  Sigma        9.93897e-01   1.64361e-02   7.31113e-06   2.40755e-01
+ 1019 569.223 54.2478
+ 1024 555.512 53.5681
+ 1093 652.568 0.878449
+ 1100 652.016 1.00288
+ 1104 651.984 1.05772
+ 1108 651.705 1.05056
+ 1112 651.568 1.02758
+ 1117 651.646 1.04969
+ 1123 651.818 1.01147
+ 1128 652.147 0.993897
+1019  Difference compared with run 1019  0
+1024  Difference compared with run 1019  -13.7109
+1093  Difference compared with run 1019  83.3453
+1100  Difference compared with run 1019  82.7933
+1104  Difference compared with run 1019  82.7615
+1108  Difference compared with run 1019  82.4819
+1112  Difference compared with run 1019  82.3456
+1117  Difference compared with run 1019  82.4238
+1123  Difference compared with run 1019  82.5948
+1128  Difference compared with run 1019  82.9244
+

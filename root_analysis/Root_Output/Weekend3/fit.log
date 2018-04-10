@@ -1,0 +1,310 @@
+
+
+*******************************************************************************
+Thu May 11 19:17:55 2017
+
+
+FIT:    data read from 'lineshape.txt'  using 1:2
+        format = x:z
+        #datapoints = 15
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2            a3           
+   0 5.8714133357e+06   0.00e+00  1.53e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   4 9.0757849525e-01  -1.73e-03  1.53e-04    6.272690e+02   3.045647e+00   6.590337e-01  -2.176114e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.907578
+rel. change during last iteration : -1.73499e-08
+
+degrees of freedom    (FIT_NDF)                        : 11
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.287241
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0825071
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 627.269          +/- 0.1148       (0.01831%)
+a1              = 3.04565          +/- 0.1797       (5.902%)
+a2              = 0.659034         +/- 0.08552      (12.98%)
+a3              = -0.217611        +/- 0.08794      (40.41%)
+
+correlation matrix of the fit parameters:
+                a0     a1     a2     a3     
+a0              1.000 
+a1             -0.105  1.000 
+a2             -0.751  0.281  1.000 
+a3              0.178 -0.914 -0.403  1.000 
+
+
+*******************************************************************************
+Thu May 11 19:21:21 2017
+
+
+FIT:    data read from 'lineshape.txt'  using 1:2
+        format = x:z
+        #datapoints = 15
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2            a3           
+   0 5.8714133357e+06   0.00e+00  1.53e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   4 9.0757849525e-01  -1.73e-03  1.53e-04    6.272690e+02   3.045647e+00   6.590337e-01  -2.176114e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.907578
+rel. change during last iteration : -1.73499e-08
+
+degrees of freedom    (FIT_NDF)                        : 11
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.287241
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0825071
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 627.269          +/- 0.1148       (0.01831%)
+a1              = 3.04565          +/- 0.1797       (5.902%)
+a2              = 0.659034         +/- 0.08552      (12.98%)
+a3              = -0.217611        +/- 0.08794      (40.41%)
+
+correlation matrix of the fit parameters:
+                a0     a1     a2     a3     
+a0              1.000 
+a1             -0.105  1.000 
+a2             -0.751  0.281  1.000 
+a3              0.178 -0.914 -0.403  1.000 
+
+
+*******************************************************************************
+Thu May 11 19:23:24 2017
+
+
+FIT:    data read from 'lineshape.txt'  using 1:2
+        format = x:z
+        #datapoints = 15
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3+a4*x**4
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Thu May 11 19:23:50 2017
+
+
+FIT:    data read from 'lineshape.txt'  using 1:2
+        format = x:z
+        #datapoints = 15
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3+a4*x**4
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2            a3            a4           
+   0 5.8311720435e+06   0.00e+00  2.14e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   5 7.4128063494e-01  -1.32e-08  2.14e-05    6.271544e+02   2.949063e+00   1.019831e+00  -1.417239e-01  -1.387699e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.741281
+rel. change during last iteration : -1.31798e-13
+
+degrees of freedom    (FIT_NDF)                        : 10
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.272265
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0741281
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 627.154          +/- 0.133        (0.02121%)
+a1              = 2.94906          +/- 0.1822       (6.177%)
+a2              = 1.01983          +/- 0.2542       (24.92%)
+a3              = -0.141724        +/- 0.09755      (68.83%)
+a4              = -0.13877         +/- 0.09265      (66.76%)
+
+correlation matrix of the fit parameters:
+                a0     a1     a2     a3     a4     
+a0              1.000 
+a1              0.123  1.000 
+a2             -0.741 -0.252  1.000 
+a3             -0.174 -0.914  0.383  1.000 
+a4              0.575  0.354 -0.948 -0.519  1.000 
+
+
+*******************************************************************************
+Thu May 11 21:14:54 2017
+
+
+FIT:    data read from '3216.txt' using 1:2
+        format = x:z
+        #datapoints = 28
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2x**2+a3*x**3
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Thu May 11 21:15:14 2017
+
+
+FIT:    data read from '3216.txt' using 1:2
+        format = x:z
+        #datapoints = 28
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Thu May 11 21:15:22 2017
+
+
+FIT:    data read from '3216.txt' using 1:2
+        format = x:z
+        #datapoints = 28
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2            a3           
+   0 1.0969488813e+07   0.00e+00  1.41e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   4 7.7592201350e-01  -7.77e-05  1.41e-04    6.273590e+02   2.707678e+00   6.889648e-01  -8.565173e-02
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.775922
+rel. change during last iteration : -7.76884e-10
+
+degrees of freedom    (FIT_NDF)                        : 24
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.179806
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0323301
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 627.359          +/- 0.0508       (0.008098%)
+a1              = 2.70768          +/- 0.08179      (3.021%)
+a2              = 0.688965         +/- 0.04088      (5.934%)
+a3              = -0.0856517       +/- 0.04168      (48.66%)
+
+correlation matrix of the fit parameters:
+                a0     a1     a2     a3     
+a0              1.000 
+a1             -0.172  1.000 
+a2             -0.735  0.271  1.000 
+a3              0.227 -0.901 -0.400  1.000 
+
+
+*******************************************************************************
+Thu May 11 21:24:26 2017
+
+
+FIT:    data read from '3216.txt' using 1:2
+        format = x:z
+        #datapoints = 28
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3+a4*x**4
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a1            a3            a4           
+   0 3.0711460310e+02   0.00e+00  2.81e+02    6.273590e+02   2.707678e+00   2.707678e+00  -8.565173e-02   1.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Thu May 11 21:30:38 2017
+
+
+FIT:    data read from '3216.txt' using 1:2
+        format = x:z
+        #datapoints = 28
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3+a4*x**4
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2            a3            a4           
+   0 1.0905980419e+07   0.00e+00  1.94e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   4 4.9386978735e-01  -2.25e-01  1.94e-04    6.272555e+02   2.615065e+00   1.043873e+00  -1.386763e-02  -1.403112e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.49387
+rel. change during last iteration : -2.25284e-06
+
+degrees of freedom    (FIT_NDF)                        : 23
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.146535
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0214726
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 627.256          +/- 0.05029      (0.008017%)
+a1              = 2.61507          +/- 0.07138      (2.73%)
+a2              = 1.04387          +/- 0.1034       (9.909%)
+a3              = -0.0138676       +/- 0.03932      (283.5%)
+a4              = -0.140311        +/- 0.03871      (27.59%)
+
+correlation matrix of the fit parameters:
+                a0     a1     a2     a3     a4     
+a0              1.000 
+a1              0.071  1.000 
+a2             -0.732 -0.257  1.000 
+a3             -0.124 -0.907  0.366  1.000 
+a4              0.568  0.358 -0.947 -0.504  1.000 
+
+
+*******************************************************************************
+Thu May 11 21:50:24 2017
+
+
+FIT:    data read from '3216.txt' using 1:2
+        format = x:z
+        #datapoints = 28
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a0+a1*x+a2*x**2+a3*x**3+a4*x**4+a5*x**5
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2            a3            a4            a5           
+   0 1.0871911550e+07   0.00e+00  2.85e+00    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   5 4.6195332933e-01  -1.33e-08  2.85e-05    6.272366e+02   2.723736e+00   1.121434e+00  -1.899274e-01  -1.781822e-01   5.488450e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.461953
+rel. change during last iteration : -1.32784e-13
+
+degrees of freedom    (FIT_NDF)                        : 22
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.144906
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0209979
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 627.237          +/- 0.05204      (0.008297%)
+a1              = 2.72374          +/- 0.1129       (4.146%)
+a2              = 1.12143          +/- 0.1201       (10.71%)
+a3              = -0.189927        +/- 0.148        (77.93%)
+a4              = -0.178182        +/- 0.04908      (27.55%)
+a5              = 0.0548845        +/- 0.04452      (81.11%)
+
+correlation matrix of the fit parameters:
+                a0     a1     a2     a3     a4     a5     
+a0              1.000 
+a1             -0.188  1.000 
+a2             -0.750  0.272  1.000 
+a3              0.253 -0.902 -0.424  1.000 
+a4              0.608 -0.314 -0.957  0.501  1.000 
+a5             -0.295  0.781  0.524 -0.965 -0.626  1.000 
