@@ -33,7 +33,7 @@ DATA->Draw("32.0702-(0.03575*X1posC)+(0.00000411451*X1posC*X1posC)>>hExback1","C
 //removed the X2flag==0 since the efficiency of X2 wasn't great and so, including this condition makes us sensitive to anything that isn't quite right with X2.
 
 //remember to change the axis title
-hExdiff->SetTitle("^{24}Mg(#alpha,#alpha') at 0^{o} (background subtracted)"); //figure out how to insert alpha,alpha'
+hExdiff->SetTitle("^{26}Mg(#alpha,#alpha') at 0^{o} (background subtracted)"); //figure out how to insert alpha,alpha'
 hExdiff->SetStats(0);
 hExdiff->GetXaxis()->SetTitle("E_{x} (MeV)");
 hExdiff->GetXaxis()->CenterTitle(true);
@@ -41,10 +41,10 @@ hExdiff->GetYaxis()->SetTitle("Counts/10keV");
 hExdiff->GetYaxis()->CenterTitle(true);
 
 hExdiff->Add(hEx);
-hExdiff->Add(hExback1,-0.6667);
-hExdiff->Add(hExback2,-0.6667);
-hExbacktot->Add(hExback1,0.6667);
-hExbacktot->Add(hExback2,0.6667);
+hExdiff->Add(hExback1,-0.77778);
+hExdiff->Add(hExback2,-0.77778);
+hExbacktot->Add(hExback1,0.77778);
+hExbacktot->Add(hExback2,0.77778);
 
 hEx->SetLineColor(4);
 hExback1->SetLineColor(2);

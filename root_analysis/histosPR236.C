@@ -18,7 +18,7 @@ void histosPR236()
 
 // BASICS: Create 1 dimensional histograms
 TH1F *hpr = new TH1F("hpr","Pattern Register",20,0.,20.);
-TH1F *htof = new TH1F("htof","Time of Flight",1000,4500.,5500.);
+TH1F *htof = new TH1F("htof","Time of Flight",1000,0.,5500.);
 TH1F *hpad1 = new TH1F("hpad1","Paddle 1",700,100.,1500.);
 TH1F *hpad2 = new TH1F("hpad2","Paddle 2",550,100.,1200.);
 TH1F *hpad3 = new TH1F("hpad3","Paddle 3",1024,0.,4096.);

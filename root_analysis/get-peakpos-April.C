@@ -27,11 +27,12 @@
 */
 
 //PR236 for 24Mg
-  Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
-  Double_t fitgauslow=678;  // to define range where gauss fitting is done
-  Double_t fitgaushi=685;   // to define range where gauss fitting is done
-  Double_t fitcombinedlow=676;    // range over which fitting is performed
-  Double_t fitcombinedhi=686;	  // range over which fitting is performed
+  //Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
+  Int_t run_no[]={1128,1093,1100,1104,1108,1112,1117,1123};
+  Double_t fitgauslow=650;  // to define range where gauss fitting is done
+  Double_t fitgaushi=655;   // to define range where gauss fitting is done
+  Double_t fitcombinedlow=640;    // range over which fitting is performed
+  Double_t fitcombinedhi=660;	  // range over which fitting is performed
   Double_t rangelow=fitcombinedlow;    // range of TF1 fit
   Double_t rangehi=fitcombinedhi;     // range of TF1 fit
 
@@ -88,7 +89,8 @@
   Double_t peakposition2[nrofruns];
   Double_t sigma2[nrofruns];
   Double_t pol0=100,pol1=0;
-  TF1 *fit = new TF1("fit","gaus(0) + pol2(3)",rangelow,rangehi);
+  TF1 *fit = new TF1("fit","gaus(0)+pol2(3)",rangelow,rangehi);
+  //TF1 *fit = new TF1("fit","gaus(0)",rangelow,rangehi);
   Double_t par2[5];
 
   for(Int_t i=0;i<nrofruns;i++)	{

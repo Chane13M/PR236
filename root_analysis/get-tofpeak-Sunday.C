@@ -4,6 +4,8 @@
   char name[128];
 
   Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146}; //WE1 26Mg
+  //weekend 1 all
+  //Int_t run_no[]={1128,1093,1100,1104,1108,1112,1117,1123,1097,1103,1107,1111,1118,1121,1127,1023,1095,1101,1106,1110,1116,1120,1126};
   Int_t nrofruns=sizeof(run_no)/sizeof(run_no[0]);  
   cout<<" Total nr of runs to peakfit: "<< nrofruns<<endl;
 

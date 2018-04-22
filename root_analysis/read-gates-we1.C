@@ -23,12 +23,10 @@ TCut CUTtrigvsCI = "triggerI/CII<3";
 
 //uncomment depending on isotope
 //values for 26Mg
-/*
-TCut CUTy = "Y1>-10 && Y1<24";
-TCut CUTyback1 = "Y1<-10 && Y1>-25";
-TCut CUTyback2 = "Y1<-25 && Y1>-40";     
-TCut CUTybckg = "Y1>-40 && Y1<-10"; //will use this when doing a background subtraction      
-*/
+TCut CUTy = "Y1>-12 && Y1<24";
+TCut CUTyback1 = "Y1<-12 && Y1>-26";
+TCut CUTyback2 = "Y1<-26 && Y1>-40";     
+TCut CUTybckg = "Y1>-40 && Y1<-12"; //will use this when doing a background subtraction      
 
 //values for 58Ni
 /*
