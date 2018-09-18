@@ -8,8 +8,9 @@ c1->SetFillColor(0);
 c1->SetGridy(0);
 c1->SetFillColor(0);
 
-TCut CUTYbck1 = "Y1>-32 && Y1<-12";                                     // "Y1>-35 && Y1<-10";//"Y1>-32 && Y1<-12";   
-TCut CUTYbck2 = "Y1>25 && Y1<30";  
+//cuts for 26Mg
+TCut CUTYbck1 = "Y1>-40 && Y1<-10";                                     // "Y1>-35 && Y1<-10";//"Y1>-32 && Y1<-12";   
+TCut CUTYbck2 = "Y1>22 && Y1<35";  
 
 // Create 1 dimensional histograms
 
@@ -42,7 +43,7 @@ DATA->Draw("(Ex-0.085)>>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
 //hEx->GetXaxis()->SetTitleOffset(1.1);  
 //hEx->GetYaxis()->SetTitleOffset(1.4); 
 
-hExdiff->SetTitle("24Mg(#alpha,#alpha) at 0^{o}"); // (background subtracted)");
+hExdiff->SetTitle("26Mg(#alpha,#alpha) at 0^{o}"); // (background subtracted)");
 hExdiff->SetStats(0);
 hExdiff->GetXaxis()->SetTitle("E_{x} (MeV)");
 hExdiff->GetXaxis()->CenterTitle(true);
@@ -52,10 +53,10 @@ hExdiff->GetXaxis()->SetTitleOffset(1.1);
 hExdiff->GetYaxis()->SetTitleOffset(1.4); 
 
 hExdiff->Add(hEx);
-hExdiff->Add(hExback1,-18.5/20.);
-hExdiff->Add(hExback2,-18.5/5.);
-hExbacktot->Add(hExback1,-18.5/20.);
-hExbacktot->Add(hExback2,18.5/5.);
+hExdiff->Add(hExback1,-16/30.);
+hExdiff->Add(hExback2,-16/13.);
+hExbacktot->Add(hExback1,-16/30.);
+hExbacktot->Add(hExback2,16/13.);
 
 hEx->SetLineColor(4);
 hExback1->SetLineColor(2);

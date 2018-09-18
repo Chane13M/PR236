@@ -10,7 +10,7 @@
   pad2->cd();
   pad2->Divide(2,2);
 
-TCut CUTbasic = "tof>4700 && tof<4900 && pad1>1200 && pad1<2100";
+TCut CUTbasic = "tof>4700 && tof<4900 && pad1>1200 && pad1<2500";
 
 
 pad2->cd(1);

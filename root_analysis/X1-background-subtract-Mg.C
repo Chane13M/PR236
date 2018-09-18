@@ -17,7 +17,7 @@ TH1F *hExdiff = new TH1F("hExdiff","Excitation energy",2000,0,800);
 
 DATAChain->Draw("X1posC >>hEx",CUTbasic && CUTlimits && CUTy,"");
 DATAChain->Draw("X1posC >>hExback1",CUTbasic && CUTlimits && CUTybckg,"");
-//DATAChain->Draw("X1posC >>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
+DATAChain->Draw("X1posC >>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
 
 /*
  * // Create 1 dimensional histograms for Position
@@ -47,13 +47,13 @@ hExdiff->Add(hExback1,-2);
 
 hEx->SetLineColor(4);
 hExback1->SetLineColor(2);
-//hExback2->SetLineColor(3);
+hExback2->SetLineColor(3);
 hExdiff->SetLineColor(1);
-//hExbacktot->SetLineColor(6);
+hExbacktot->SetLineColor(6);
 
 hEx->Draw();
-hExdiff->Draw("same");
-hExback1->Draw("same");
+//hExdiff->Draw("same");
+//hExback1->Draw("same");
 //hExback2->Draw("same");
 //hExbacktot->Draw("same");
 

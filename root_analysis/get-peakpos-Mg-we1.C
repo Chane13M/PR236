@@ -8,17 +8,17 @@
   //Int_t run_no[128]={1071,1102};
   //Int_t run_no[128]={1021,1030,1031,1071,1102};
 
-  // Mg runs, WE1
-  //Int_t nrofruns=10; 
-  //Int_t run_no[128]={1064,1069,1093,1100,1104,1108,1112,1117,1123,1128};
+  // 26Mg runs, WE1
+  //Int_t nrofruns=8; 
+  //Int_t run_no[128]={1093,1100,1104,1108,1112,1117,1123,1128};
 
   // WE3, 24Mg
-  //Int_t nrofruns=8; 
-  //Int_t run_no[128]={3077,3081,3086,3090,3094,3098,3102,3106};
+  Int_t nrofruns=7; 
+  Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
 
   // WE3, 13C
-  Int_t nrofruns=1; 
-  Int_t run_no[128]={1104};
+  //Int_t nrofruns=1; 
+  //Int_t run_no[128]={1104};
 
   //TF1 *fit = new TF1("fit","gaus(0) + pol1(3)",1,800);
 
@@ -45,8 +45,8 @@
 	  fit->SetParLimits(0,0,1e9);
 */
 
-	  hX1pos->Fit("gaus","R","",649,656);       // for 13C
-	  //hX1pos->Fit("gaus","R","",678,686);       // for Mg run 1064 and after
+	  //hX1pos->Fit("gaus","R","",649,656);       // for 24Mg
+	  hX1pos->Fit("gaus","R","",678,688);       // for Mg run 1064 and after
 	  //hX1pos->Fit("gaus","R","",610,616);    // for mylar run 1071 and after
 
 
