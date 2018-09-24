@@ -94,7 +94,7 @@ for(Int_t k=0;k<nr_of_x;k++) {
 //==================
 TCanvas *c2= new TCanvas("c2","c2",1700,10,1100,500);
 
-TPaveLabel *title = new TPaveLabel(0.1,0.96,0.9,0.99,"#theta_FP to #theta_SCAT");
+TPaveLabel *title = new TPaveLabel(0.1,0.96,0.9,0.99,"#theta_{FP} to #theta_{SCAT}");
 title->SetTextFont(42);
 title->Draw();
 
@@ -122,8 +122,8 @@ for(Int_t k=0;k<nr_of_x;k++) {
     gr_angle[k][n]->SetMarkerColor(1);
     gr_angle[k][n]->SetMarkerStyle(20);
     gr_angle[k][n]->SetMarkerSize(0.65);
-    gr_angle[k][n]->GetXaxis()->SetTitle("#theta_FP (degr)");
-    gr_angle[k][n]->GetYaxis()->SetTitle("#theta_SCAT (degr)");
+    gr_angle[k][n]->GetXaxis()->SetTitle("#theta_{FP} (deg.)");
+    gr_angle[k][n]->GetYaxis()->SetTitle("#theta_{SCAT} (deg.)");
   }
 }
 
@@ -141,7 +141,7 @@ for(Int_t k=0;k<nr_of_x;k++) {
     slope[k][n] = gr_angle[k][n]->GetFunction("pol1")->GetParameter(1);
     offset[k][n] = gr_angle[k][n]->GetFunction("pol1")->GetParameter(0);
     chisq[k][n] = gr_angle[k][n]->GetFunction("pol1")->GetChisquare();
-    sprintf(slopetxt,"slope = %f;  offset = %f ",slope[k][n],offset[k][n]);
+    sprintf(slopetxt,"Slope = %f;  Offset = %f ",slope[k][n],offset[k][n]);
     legend1 = new TPaveText(0.15,0.87,0.85,1.0,"brNDC");
     legend1->SetTextFont(42);
     legend1->AddText(slopetxt);
@@ -196,10 +196,10 @@ for(Int_t k=0;k<2;k++) {
     gr_TH[k]->SetMarkerColor(1);
     gr_TH[k]->SetMarkerStyle(20);
     gr_TH[k]->SetMarkerSize(0.65);
-    gr_TH[k]->GetXaxis()->SetTitle("X_fp (mm)");
+    gr_TH[k]->GetXaxis()->SetTitle("X_{fp} (mm)");
 }
-gr_TH[0]->GetYaxis()->SetTitle("slope");
-gr_TH[1]->GetYaxis()->SetTitle("offset");
+gr_TH[0]->GetYaxis()->SetTitle("Slope");
+gr_TH[1]->GetYaxis()->SetTitle("Offset");
 
 for(Int_t k=0;k<2;k++) {
     temp=(k+1);
@@ -229,7 +229,7 @@ for(Int_t k=0;k<2;k++) {
 }
 graphpad3->Update();
 
-cout<<"Theta_SCAT=("<< offset3[0]<<" + "<<slope3[0]<<"*X)*Theta_FP + ("<< offset3[1]<<" + "<<slope3[1]<<"*X)"<<endl;
+cout<<"#Theta_{SCAT}=("<< offset3[0]<<" + "<<slope3[0]<<"*X)*#Theta_{FP} + ("<< offset3[1]<<" + "<<slope3[1]<<"*X)"<<endl;
 
 
 };

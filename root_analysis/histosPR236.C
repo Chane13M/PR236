@@ -65,7 +65,7 @@ TH1F *hY1 = new TH1F("hY1","Y1",420,-60.,80.);
 TH1F *hY2 = new TH1F("hY2","Y2",420,-60.,80.);
 
 
-// fanciers stuff: create 1dim histograms
+// fanciers stuff: create 1dim histogramsof
 
 TH1F *hX1dt = new TH1F("hX1dt","X1 offset corrected drifttime",1200,0.,15000.);
 TH1F *hX2dt = new TH1F("hX2dt","X2 offset corrected drifttime",1200,0.,15000.);

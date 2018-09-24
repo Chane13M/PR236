@@ -46,7 +46,7 @@ TCut CUTyback2 = "Y1<-27 && Y1>-42";
 TCut CUTybckg = "Y1>-42 && Y1<-12"; //will use this when doing a background subtraction      
 */
 
-//values for 24Mg for weekend 3
+//values for 24Mg for weekend 3 background
 /*
 TCut CUTy = "Y1>-4 && Y1<25";
 TCut CUTyback1 = "Y1<-4 && Y1>-24";
@@ -54,7 +54,7 @@ TCut CUTyback2 = "Y1<-24 && Y1>-44";
 TCut CUTybckg = "Y1>-40 && Y1<-4"; //will use this when doing a background subtraction      
 */
 
-//values for 24Mg for weekend 3 with background on both sides
+//values for 24Mg for weekend 3 with background one side making up total background
 TCut CUTy = "Y1>-3 && Y1<24"; //21
 TCut CUTYbck1 = "Y1<-3 && Y1>-23"; //20
 TCut CUTYbck2 = "Y1<-23 && Y1>-43"; //13

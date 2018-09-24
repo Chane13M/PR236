@@ -45,8 +45,8 @@
 	  fit->SetParLimits(0,0,1e9);
 */
 
-	  //hX1pos->Fit("gaus","R","",649,656);       // for 24Mg
-	  hX1pos->Fit("gaus","R","",678,688);       // for Mg run 1064 and after
+	  //hX1pos->Fit("gaus","R","",649,656);       // for 26Mg for PR236
+	  hX1pos->Fit("gaus","R","",678,688);       // for 24Mg for PR26
 	  //hX1pos->Fit("gaus","R","",610,616);    // for mylar run 1071 and after
 
 

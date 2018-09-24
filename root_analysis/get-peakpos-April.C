@@ -38,6 +38,7 @@
   //Double_t rangehi=fitcombinedhi;     // range of TF1 fit
 
 //PR236 for 26Mg
+/*
   Int_t run_no[]={1128,1093,1100,1104,1108,1112,1117,1123};
   Double_t fitgauslow=650;  // to define range where gauss fitting is done
   Double_t fitgaushi=655;   // to define range where gauss fitting is done
@@ -45,7 +46,7 @@
   Double_t fitcombinedhi=660;	  // range over which fitting is performed
   Double_t rangelow=fitcombinedlow;    // range of TF1 fit
   Double_t rangehi=fitcombinedhi;     // range of TF1 fit
-
+*/
 
 /*  //PR260, 0 degr, 48Ca
   Int_t run_no[]={1042,1036,1047,1053,1085,1091,1096,1101,1106,1113,1119,1125,1130,1135,1140,1146,1151};

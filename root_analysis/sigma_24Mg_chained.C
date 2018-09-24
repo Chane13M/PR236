@@ -3,20 +3,46 @@ char name[128];
 char text[128];
 
 //Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
-//Double_t fitgauslow=680;  // to define range where gauss fitting is done
-//Double_t fitgaushi=685;   // to define range where gauss fitting is done
-//Double_t fitcombinedlow=676;    // range over which fitting is performed
-//Double_t fitcombinedhi=688;	  // range over which fitting is performed
-//Double_t rangelow=fitcombinedlow;    // range of TF1 fit
-//Double_t rangehi=fitcombinedhi;
+//for main state 9.305
+/*
+Double_t fitgauslow=680;  // to define range where gauss fitting is done
+Double_t fitgaushi=686;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=679;    // range over which fitting is performed
+Double_t fitcombinedhi=687;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
+
+//for 11.728MeV
+/*
+Double_t fitgauslow=572;  // to define range where gauss fitting is done
+Double_t fitgaushi=576;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=570.8;    // range over which fitting is performed
+Double_t fitcombinedhi=578.8;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
+
+
+//for 15.25MeV
+Double_t fitgauslow=496;  // to define range where gauss fitting is done
+Double_t fitgaushi=501;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=492.6;    // range over which fitting is performed
+Double_t fitcombinedhi=505;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+
+
 
 //for 26Mg from weekend 1 from PR236
+/*
 Double_t fitgauslow=650;  // to define range where gauss fitting is done
 Double_t fitgaushi=655;   // to define range where gauss fitting is done
 Double_t fitcombinedlow=640;    // range over which fitting is performed
 Double_t fitcombinedhi=660;	  // range over which fitting is performed
 Double_t rangelow=fitcombinedlow;    // range of TF1 fit
 Double_t rangehi=fitcombinedhi;     // range of TF1 fit
+*/
 
 Int_t nrofruns=1;  
  
@@ -41,7 +67,7 @@ Int_t nrofruns=1;
 	  TFile *_file0 = TFile::Open(name);     
 
 	  cout<<"First fitting a single gaussian..."<<endl;
-  	  TH1F *hX1pos = new TH1F("hX1pos","X1 Position",1200,500.,800.);
+  	  TH1F *hX1pos = new TH1F("hX1pos","X1 Position",1200,0.,800.);
           DATAChain->Draw("X1posC>>hX1pos",CUTbasic && CUTlimits,"");
 	  hX1pos->Fit("gaus","QR","",fitgauslow,fitgaushi);  // for Mg run 1064 and earlier
 	  //if(run_no[i]<1080)  hX1pos->Fit("gaus","QR","",fitgauslow,fitgaushi);  // for Mg run 1064 and earlier
