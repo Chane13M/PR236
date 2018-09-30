@@ -1,4 +1,9 @@
 {
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
+    //                   This script is used to get the X1 peak position for multiple peaks             //
+    //             these peaks will be assigned to well-documented excited states at a later stage      //
+    //                                          Chane Moodley                                           //
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
   char name[128];
 
   int nrofpeaks=3;
@@ -12,26 +17,10 @@
   low[1]=571.5;   high[1]=579;
   low[2]=495;   high[2]=505;
 
-  //low[0]=9.25;   high[0]=9.35;
-  //low[1]=10.61;  high[1]=10.75;
-  //low[2]=11.66;   high[2]=11.79;
-  //low[3]=13.8;   high[3]=13.92;
-  //low[4]=15.17;   high[4]=15.31;
-  //low[5]=16.75;   high[5]=16.94;
-  //low[6]=12.77;   high[6]=12.86;
-  //low[7]=12.91;   high[7]=13.;
-  //low[8]=13.84;   high[8]=13.92;
-
   ExNNDC[0]=9.30539;
-  //ExNNDC[1]=10.6797;
   ExNNDC[1]=11.7281;
-  //ExNNDC[3]=13.85;
   ExNNDC[2]=15.25;
-  //ExNNDC[5]=16.88;
-  //ExNNDC[6]=12.8159;
-  //ExNNDC[7]=12.9549;
-  //ExNNDC[8]=13.879;
-  
+    
   for(Int_t i=0;i<nrofpeaks;i++){
     sprintf(name,"hExdiff->Fit(\"gaus\",\"\",\"\",%f,%f);",low[i],high[i]);
     gROOT->ProcessLine(name);
@@ -39,7 +28,7 @@
     sigma[i] = hExdiff->GetFunction("gaus")->GetParameter(2);
 
 	//c1->Modified(); c1->Update();
-	//c1->WaitPrimitive();    // if you want to use see event by event, by using 'enter' 
+	//c1->WaitPrimitive(); 
   }    
 
   for(Int_t i=0;i<nrofpeaks;i++){

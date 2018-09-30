@@ -3,7 +3,7 @@ char name[128];
 char text[128];
 
 //Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
-//for main state 9.305
+//for main state 9.305 MeV
 /*
 Double_t fitgauslow=680;  // to define range where gauss fitting is done
 Double_t fitgaushi=686;   // to define range where gauss fitting is done
@@ -25,14 +25,74 @@ Double_t rangehi=fitcombinedhi;
 
 
 //for 15.25MeV
+/*
 Double_t fitgauslow=496;  // to define range where gauss fitting is done
 Double_t fitgaushi=501;   // to define range where gauss fitting is done
 Double_t fitcombinedlow=492.6;    // range over which fitting is performed
 Double_t fitcombinedhi=505;	  // range over which fitting is performed
 Double_t rangelow=fitcombinedlow;    // range of TF1 fit
 Double_t rangehi=fitcombinedhi;
+*/
 
+//for (maybe) 13.85
+/*
+Double_t fitgauslow=536;  // to define range where gauss fitting is done
+Double_t fitgaushi=540;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=536;    // range over which fitting is performed
+Double_t fitcombinedhi=551;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
 
+//for (maybe) 10.680
+/*
+Double_t fitgauslow=606;  // to define range where gauss fitting is done
+Double_t fitgaushi=610;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=605;    // range over which fitting is performed
+Double_t fitcombinedhi=611;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
+
+//for next state (between 11 and 13 MeV)
+/*
+Double_t fitgauslow=561;  // to define range where gauss fitting is done
+Double_t fitgaushi=571;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=561;    // range over which fitting is performed
+Double_t fitcombinedhi=571;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
+
+//between 9.305 and 10
+/*
+Double_t fitgauslow=636;  // to define range where gauss fitting is done
+Double_t fitgaushi=644;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=636;    // range over which fitting is performed
+Double_t fitcombinedhi=644;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
+
+//after 15 MeV
+/*
+Double_t fitgauslow=481;  // to define range where gauss fitting is done
+Double_t fitgaushi=489;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=481;    // range over which fitting is performed
+Double_t fitcombinedhi=489;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
+
+//between 10 and 11 MeV
+/*
+Double_t fitgauslow=601;  // to define range where gauss fitting is done
+Double_t fitgaushi=607;   // to define range where gauss fitting is done
+Double_t fitcombinedlow=601;    // range over which fitting is performed
+Double_t fitcombinedhi=607;	  // range over which fitting is performed
+Double_t rangelow=fitcombinedlow;    // range of TF1 fit
+Double_t rangehi=fitcombinedhi;
+*/
 
 //for 26Mg from weekend 1 from PR236
 /*
