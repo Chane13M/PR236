@@ -1,2 +1,2 @@
 # SCRIPTS
-My third attempt in having experiment-specific script repository
+My third attempt at having an experiment-specific script repository. Loads of scripts, loads of changes, loads of confusion.
