@@ -55,10 +55,18 @@ TCut CUTybckg = "Y1>-40 && Y1<-4"; //will use this when doing a background subtr
 */
 
 //values for 24Mg for weekend 3 with background one side making up total background
+/*
 TCut CUTy = "Y1>-3 && Y1<24"; //21
 TCut CUTYbck1 = "Y1<-3 && Y1>-23"; //20
 TCut CUTYbck2 = "Y1<-23 && Y1>-43"; //13
 TCut CUTybckg = "Y1>-3 && Y1<-43";
+*/
+
+//values for weekend 3 with 24 mg runs
+TCut CUTy = "Y1>-7 && Y1<22"; //21
+TCut CUTYbck1 = "Y1<-7 && Y1>-25"; //20
+TCut CUTYbck2 = "Y1<-25 && Y1>-43"; //13
+TCut CUTybckg = "Y1>-7 && Y1<-43";
 
 
 //58Ni for chained data

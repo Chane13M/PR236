@@ -13,6 +13,7 @@
   Float_t high[nrofpeaks];
   Float_t ExNNDC[nrofpeaks];
 
+  /*
   low[0]=680;   high[0]=686; //9.305 MeV
   low[1]=648;   high[1]=652;
   low[2]=637;   high[2]=642;
@@ -23,6 +24,18 @@
   low[7]=495;   high[7]=505; //15.25 MeV
   low[8]=480;   high[8]=488;
   low[9]=442;   high[9]=454;
+  */
+
+  low[0]=679;   high[0]=686; //9.305 MeV
+  low[1]=650;   high[1]=653;
+  low[2]=637;   high[2]=643;
+  low[3]=613;   high[3]=618;
+  low[4]=606;   high[4]=610; //11.278 MeV
+  low[5]=602;   high[5]=606;
+  low[6]=538;   high[6]=547;
+  low[7]=495;   high[7]=502; //15.25 MeV
+  low[8]=482;   high[8]=487;
+  low[9]=441;   high[9]=454;
 
   ExNNDC[0]=9.30539;
   ExNNDC[1]=11.7281;

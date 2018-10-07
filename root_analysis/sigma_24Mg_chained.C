@@ -4,14 +4,12 @@ char text[128];
 
 //Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
 //for main state 9.305 MeV
-/*
 Double_t fitgauslow=680;  // to define range where gauss fitting is done
 Double_t fitgaushi=686;   // to define range where gauss fitting is done
 Double_t fitcombinedlow=679;    // range over which fitting is performed
 Double_t fitcombinedhi=687;	  // range over which fitting is performed
 Double_t rangelow=fitcombinedlow;    // range of TF1 fit
 Double_t rangehi=fitcombinedhi;
-*/
 
 //for 11.728MeV
 /*

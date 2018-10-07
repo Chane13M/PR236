@@ -146,7 +146,7 @@
 
     //commenting out energy and uncommenting position
 	  //hX1diff->Fit("gaus","R","",low[i],high[i]);  
-	  hX1pos1->Fit("gaus","R","",low[i],high[i]);
+	  hExdiff->Fit("gaus","R","",low[i],high[i]);
 	  gaus->GetParameters(par);
           strength[i] = par[0];
           peakposition[i] = par[1];
@@ -157,7 +157,7 @@
 
 	  fit->SetParameters(strength[i],peakposition[i],sigma[i],pol0,pol1);
           //hX1diff->Fit("fit","R","",low[i],high[i]);
-          hX1pos1->Fit("gaus","R","",low[i],high[i]);
+          hExdiff->Fit("gaus","R","",low[i],high[i]);
 	  fit->GetParameters(par2);
           peakposition2[i] = par2[1];
           sigma2[i] = par2[2];

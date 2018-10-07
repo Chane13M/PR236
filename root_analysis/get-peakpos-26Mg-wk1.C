@@ -2,9 +2,9 @@
   //although this is Lindsay's script I am modifying it to be used for my data!!!
 
 
-  //char name[128];
-	char *name2; 
-	name2 = new char[128];
+  char name[128];
+	//char *name2; 
+	//name2 = new char[128];
 
   // Make sure that the run numbers below are applicable to your experiment. Also make sure that the nrofruns matches the number of run numbers you put in when you list them. 
   Int_t nrofruns=31;
@@ -23,8 +23,8 @@
 //the efficiency of my X2 was fine throughout the experiment so I need to include a flag and remove the cuts that are not specific to (a,a') experiments
 
   TCut CUTbasic = "CUTpad1tof && CUTtofX1 && X1flag==0 && U2flag==0 && U1flag==0";
-  TCut CUTlimits = "X1pos>-100 && thetaSCAT>-3.0 && thetaSCAT<3.0";
-  TCut CUTY = "Y1>-10 && Y1<24"; 
+  TCut CUTlimits = "X1pos>-100 && thetaSCAT>-2.0 && thetaSCAT<2.0";
+  TCut CUTY = "Y1>-4 && Y1<25"; 
  
   for(Int_t i=0;i<nrofruns;i++)	{
 	  sprintf(name2,"~/K600/Data/PR236/sorted0%4d.root",run_no[i]);
@@ -38,7 +38,7 @@
 
 // It is important that you make sure that the region defined below (i.e. 645 -> 655 in this example) is valid for your own spectra. You need to fit the same peak in each run so pick a prominent peak and note its position and limits you can use to fit it. Do not make this region too narrow since you must allow for the fact that some spectra might have shifted and so a very narrow region might mean that you no longer find the peak you're looking for depending on the run.  
 	  
-          hX1pos->Fit("gaus","","",649,656);
+          hX1pos->Fit("gaus","","",676,688);
           peakposition[i] = hX1pos->GetFunction("gaus")->GetParameter(1);
           sigma[i] = hX1pos->GetFunction("gaus")->GetParameter(2);
 	 // c1->Modified(); c1->Update(); c1->WaitPrimitive();

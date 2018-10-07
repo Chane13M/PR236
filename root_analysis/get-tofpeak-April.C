@@ -2,7 +2,7 @@
   // Use CUTbasic, CUTlimits as defined in read-gates-we?.C
  
   char name[128];
- Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146}; //WE3 24Mg
+  Int_t run_no[]={3151,3073,3077,3081,3086,3090,3094,3098,3102,3106,3111,3119,3124,3125,3129,3133,3138,3142,3146,3155,3159,3163,3167,3171}; //WE3 24Mg
  //3077,3081,3106,3138,3142
  //3086,3094,3098,3102, useful
   //Int_t run_no[]={1128,1097,1103,1107,1111,1118,1121,1127};  //WE1 26Mg
@@ -25,7 +25,7 @@
   	  TH1F *htof = new TH1F("htof","TOF",700,2000.,6000.);
 	  DATA->Draw("tof>>htof","","");
           //DATA->Draw("tof>>htof","pad1<1000","");
-	  htof->Fit("gaus","QR","",4800,4860);  
+	  htof->Fit("gaus","QR","",4650,4720);  
 
 	  gaus->GetParameters(par);
           peakposition[i] = par[1];
@@ -33,7 +33,7 @@
 
 	  TCanvas *c1 = new TCanvas;
 	  c1->Modified(); c1->Update();
-	  c1->WaitPrimitive(); 
+	  //c1->WaitPrimitive(); 
   }
   for(Int_t i=0;i<nrofruns;i++)	{
      cout << " "<< run_no[i] <<" "<< peakposition[i] <<" "<< sigma[i] << endl;

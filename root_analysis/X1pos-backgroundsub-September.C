@@ -59,8 +59,9 @@ hExdiff->Draw("");
 //hExback2->Draw("same");
 //hExbacktot->Draw("same");
 
+/*
 auto legend = new TLegend(0.1,0.7,0.48,0.9);
-//legend->SetHeader("The Legend Title","C"); // option "C" allows to center the header
+legend->SetHeader("The Legend Title","C"); // option "C" allows to center the header
 legend->AddEntry(hEx,"Raw data","l");
 legend->AddEntry(hExback1,"Background 1","l");
 legend->AddEntry(hExback2,"Background 2","l");
@@ -68,6 +69,7 @@ legend->AddEntry(hExbacktot,"Total background","l");
 legend->AddEntry(hExdiff,"Background subtracted data","l");
 legend->SetLegendFont(20);
 legend->Draw();
+*/
 
 
 }
