@@ -63,11 +63,12 @@ TCut CUTybckg = "Y1>-3 && Y1<-43";
 */
 
 //values for weekend 3 with 24 mg runs
-TCut CUTy = "Y1>-7 && Y1<22"; //21
-TCut CUTYbck1 = "Y1<-7 && Y1>-25"; //20
-TCut CUTYbck2 = "Y1<-25 && Y1>-43"; //13
-TCut CUTybckg = "Y1>-7 && Y1<-43";
-
+TCut CUTy = "Y1>-7 && Y1<22"; //15
+TCut CUTYbck1 = "Y1<-7 && Y1>-25"; //18
+TCut CUTYbck2 = "Y1<-25 && Y1>-43"; //18
+TCut CUTybckg = "Y1>-7 && Y1<-43"; //36
+TCut CUTyback2 = "Y1<-25 && Y1>-43";
+TCut CUTyback1 = "Y1<-7 && Y1>-25";
 
 //58Ni for chained data
 /*

@@ -17,9 +17,9 @@ TH1F *hExback2 = new TH1F("hExback2","Excitation energy",3000,0,30);
 TH1F *hExbacktot = new TH1F("hExbacktot","Excitation energy",3000,0,30);
 TH1F *hExdiff = new TH1F("hExdiff","Excitation energy",3000,0,30);
 
-DATAChain->Draw("Ex>>hEx",CUTbasic && CUTlimits && CUTy,"");
-DATAChain->Draw("Ex>>hExback2",CUTbasic && CUTlimits && CUTYbck1,"");
-DATAChain->Draw("Ex>>hExback1",CUTbasic && CUTlimits && CUTYbck2,"");
+DATAChain->Draw("Ex>>hEx",CUTbasic && CUTflags && CUTlimits && CUTy,"");
+DATAChain->Draw("Ex>>hExback2",CUTbasic && CUTflags && CUTlimits && CUTYbck1,"");
+DATAChain->Draw("Ex>>hExback1",CUTbasic && CUTflags && CUTlimits && CUTYbck2,"");
 
 hExdiff->SetTitle("^{24}Mg(#alpha,#alpha) at 0^{o} (background subtracted)");
 hExdiff->SetStats(0);
@@ -31,10 +31,10 @@ hExdiff->GetXaxis()->SetTitleOffset(1.1);
 hExdiff->GetYaxis()->SetTitleOffset(1.4); 
 
 hExdiff->Add(hEx);
-hExdiff->Add(hExback1,-15/9);
-hExdiff->Add(hExback2,-15/9);
-hExbacktot->Add(hExback1,15/9);
-hExbacktot->Add(hExback2,15/9);
+hExdiff->Add(hExback1, -1);//,-0.416667);
+hExdiff->Add(hExback2, -1);//,-0.416667);
+hExbacktot->Add(hExback1);//,0.416667);
+hExbacktot->Add(hExback2);//,0.416667);
 
 hEx->SetLineColor(4);
 hExback1->SetLineColor(2);
