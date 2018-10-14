@@ -12,8 +12,16 @@ c3->SetFillColor(0);
 //TCut CUTYbck2 = "Y1>-43 && Y1<-25";  
  
  //for 90Zr weekend 2
-TCut CUTYbck1 = "Y1>-28 && Y1<-12.5";   
-TCut CUTYbck2 = "Y1>-43.5 && Y1<-28";
+//TCut CUTYbck1 = "Y1>-28 && Y1<-12.5";   
+//TCut CUTYbck2 = "Y1>-43.5 && Y1<-28";
+
+//for 58Ni weekend 3
+TCut CUTYbck1 = "Y1>-27 && Y1<-9";
+TCut CUTYbck2 = "Y1>-45 && Y1<-27";
+
+//for 24Mg weekend 2
+//TCut CUTYbck1 = "Y1<-3 && Y1>-22";
+//TCut CUTYbck2 = "Y1<-22 && Y1>-41";
 
 // Create 1 dimensional histograms for Position
 TH1F *hEx = new TH1F("hEx","Excitation energy",3000,0,30);
@@ -26,7 +34,7 @@ DATAChain->Draw("Ex>>hEx",CUTbasic && CUTflags && CUTlimits && CUTy,"");
 DATAChain->Draw("Ex>>hExback2",CUTbasic && CUTflags && CUTlimits && CUTYbck1,"");
 DATAChain->Draw("Ex>>hExback1",CUTbasic && CUTflags && CUTlimits && CUTYbck2,"");
 
-hExdiff->SetTitle("^{24}Mg(#alpha,#alpha) at 0^{o} (background subtracted)");
+hExdiff->SetTitle("^{58}Ni(#alpha,#alpha) at 0^{o} (background subtracted)");
 hExdiff->SetStats(0);
 hExdiff->GetXaxis()->SetTitle("E_{x} (MeV)");
 hExdiff->GetXaxis()->CenterTitle(true);

@@ -32,37 +32,16 @@ TCut CUTyback2 = "Y1<-22 && Y1>-41";
 TCut CUTyback1 = "Y1<-3 && Y1>-22";
 */
 
-//values for 58Ni
-/*
-TCut CUTy = "Y1>-12 && Y1<24"; //this is the region of interest
-TCut CUTyback1 = "Y1<-12 && Y1>-27";
-TCut CUTyback2 = "Y1<-27 && Y1>-42";     
-TCut CUTybckg = "Y1>-42 && Y1<-12"; //will use this when doing a background subtraction      
-*/
 
 //values for 90Zr weekend 2
+/*
 TCut CUTy = "Y1>-12.5 && Y1<16.5"; //18
 TCut CUTYbck1 = "Y1<-12.5 && Y1>-28"; //18
 TCut CUTYbck2 = "Y1<-28 && Y1>-43.5"; //18
 TCut CUTybckg = "Y1>-12.5 && Y1<-43.5"; //36
 TCut CUTyback2 = "Y1<-28 && Y1>-43.5";
-TCut CUTyback1 = "Y1<-12.5 && Y1>-28";      
-
-//values for 24Mg for weekend 3 background
-/*
-TCut CUTy = "Y1>-4 && Y1<25";
-TCut CUTyback1 = "Y1<-4 && Y1>-24";
-TCut CUTyback2 = "Y1<-24 && Y1>-44";     
-TCut CUTybckg = "Y1>-40 && Y1<-4"; //will use this when doing a background subtraction      
-*/
-
-//values for 24Mg for weekend 3 with background one side making up total background
-/*
-TCut CUTy = "Y1>-3 && Y1<24"; //21
-TCut CUTYbck1 = "Y1<-3 && Y1>-23"; //20
-TCut CUTYbck2 = "Y1<-23 && Y1>-43"; //13
-TCut CUTybckg = "Y1>-3 && Y1<-43";
-*/
+TCut CUTyback1 = "Y1<-12.5 && Y1>-28";
+*/      
 
 //values for weekend 3 with 24 mg runs
 /*
@@ -74,23 +53,12 @@ TCut CUTyback2 = "Y1<-25 && Y1>-43";
 TCut CUTyback1 = "Y1<-7 && Y1>-25";
 */
 
-//58Ni for chained data
-/*
-TCut CUTy = "Y1>-16 && Y1<24";
-TCut CUTyback1 = "Y1<-16 && Y1>-30";
-TCut CUTyback2 = "Y1<-30 && Y1>-44";     
-TCut CUTybckg = "Y1>-44 && Y1<-16";
-*/
-
-//90Zr for chained data
-/*
-TCut CUTy = "Y1>-20 && Y1<26";
-TCut CUTyback1 = "Y1<-20 && Y1>-32";
-TCut CUTyback2 = "Y1<-32 && Y1>-44";     
-TCut CUTybckg = "Y1>-44 && Y1<-20";
-*/
-
-
-
+//for 58Ni from weekend 3
+TCut CUTy = "Y1>-9 && Y1<16"; //15
+TCut CUTYbck1 = "Y1<-9 && Y1>-27"; //18
+TCut CUTYbck2 = "Y1<-27 && Y1>-45"; //18
+TCut CUTybckg = "Y1>-45 && Y1<-9"; //36
+TCut CUTyback2 = "Y1<-27 && Y1>-45";
+TCut CUTyback1 = "Y1<-9 && Y1>-27";
 
 }

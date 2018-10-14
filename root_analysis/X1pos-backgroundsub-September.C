@@ -16,7 +16,6 @@ TH1F *hExbacktot = new TH1F("hExbacktot","Excitation energy",2000,0,800);
 TH1F *hExdiff = new TH1F("hExdiff","Excitation energy",2000,0,800);
 
 //for 24Mg weekend 3
-
 DATAChain->Draw("X1posC >>hEx",CUTbasic && CUTlimits && CUTy,"");
 DATAChain->Draw("X1posC >>hExback1",CUTbasic && CUTlimits && CUTYbck1,"");
 DATAChain->Draw("X1posC >>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
@@ -42,7 +41,7 @@ DATAChain->Draw("(30.7314 - 0.02812*X1posC -0.000003376*X1posC^2)>>hExback2",CUT
 DATAChain->Draw("(30.7314 - 0.02812*X1posC -0.000003376*X1posC^2)>>hExback1",CUTbasic && CUTlimits && CUTYbck2,"");
 */
 
-hExdiff->SetTitle("^{24}Mg(#alpha,#alpha) at 0^{o}");
+hExdiff->SetTitle("^{58}Ni(#alpha,#alpha) at 0^{o}");
 hExdiff->SetStats(0);
 //hExdiff->GetXaxis()->SetTitle("E_{x} (MeV)");
 //hExdiff->GetXaxis()->CenterTitle(true);
@@ -50,7 +49,7 @@ hExdiff->SetStats(0);
 //hExdiff->GetYaxis()->CenterTitle(true);
 
 hExdiff->Add(hEx);
-hExdiff->Add(hExback1,-2);
+hExdiff->Add(hExback1,-1);
 hExdiff->Add(hExback2,-1);
 hExbacktot->Add(hExback1);
 hExbacktot->Add(hExback2);
