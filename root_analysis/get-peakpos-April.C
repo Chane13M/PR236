@@ -1,5 +1,5 @@
 {
-  // Use CUTbasic, CUTlimits as defined elsewhee 
+  // Use CUTbasic, CUTlimits as defined elsewhere 
   char name[128];
   char text[128];
 
@@ -28,6 +28,7 @@
 
 
 //PR236 for 24Mg
+/*
   //Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
   //Int_t run_no[]={3151,3077,3081,3106,3138,3142,3146};
   Int_t run_no[]={3151,3073,3077,3081,3086,3090,3094,3098,3102,3106,3111,3119,3124,3125,3129,3133,3138,3142,3146,3155,3159,3163,3167,3171};
@@ -37,17 +38,16 @@
   Double_t fitcombinedhi=688;	  // range over which fitting is performed
   Double_t rangelow=fitcombinedlow;    // range of TF1 fit
   Double_t rangehi=fitcombinedhi;     // range of TF1 fit
+*/
 
-//PR236 for 26Mg
-/*
-  Int_t run_no[]={1128,1093,1100,1104,1108,1112,1117,1123};
-  Double_t fitgauslow=650;  // to define range where gauss fitting is done
-  Double_t fitgaushi=655;   // to define range where gauss fitting is done
+//PR236 for 24 an 26Mg, weekend 2
+  Int_t run_no[]={2156,2161,2167};
+  Double_t fitgauslow=640.6;  // to define range where gauss fitting is done
+  Double_t fitgaushi=645.3;   // to define range where gauss fitting is done
   Double_t fitcombinedlow=640;    // range over which fitting is performed
-  Double_t fitcombinedhi=660;	  // range over which fitting is performed
+  Double_t fitcombinedhi=647;	  // range over which fitting is performed
   Double_t rangelow=fitcombinedlow;    // range of TF1 fit
   Double_t rangehi=fitcombinedhi;     // range of TF1 fit
-*/
 
 /*  //PR260, 0 degr, 48Ca
   Int_t run_no[]={1042,1036,1047,1053,1085,1091,1096,1101,1106,1113,1119,1125,1130,1135,1140,1146,1151};

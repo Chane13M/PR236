@@ -10,23 +10,23 @@
   pad2->cd();
   pad2->Divide(2,2);
 
-TCut CUTbasic = "tof>4700 && tof<4900 && pad1>1200 && pad1<2500";
+  TCut CUTbasic = "tof>4700 && tof<4900 && pad1>1200 && pad1<2500";
 
 
-pad2->cd(1);
-DATA->Draw("X1res1:X1res0>>hX1Res2d",CUTbasic,"col");
+  pad2->cd(1);
+  DATA->Draw("X1res1:X1res0>>hX1Res2d",CUTbasic,"col");
 //DATA->Draw("X1res1:X1res0>>hX1Res2d","CUTpad1tof","col");
 
-pad2->cd(2);
-DATA->Draw("U1res1:U1res0>>hU1Res2d",CUTbasic,"col");
+  pad2->cd(2);
+  DATA->Draw("U1res1:U1res0>>hU1Res2d",CUTbasic,"col");
 //DATA->Draw("U1res1:U1res0>>hU1Res2d","CUTpad1tof","col");
 
-pad2->cd(3);
-DATA->Draw("X2res1:X2res0>>hX2Res2d",CUTbasic,"col");
+  pad2->cd(3);
+  DATA->Draw("X2res1:X2res0>>hX2Res2d",CUTbasic,"col");
 //DATA->Draw("X2res1:X2res0>>hX2Res2d","CUTpad1tof","col");
 
-pad2->cd(4);
-DATA->Draw("U2res1:U2res0>>hU2Res2d",CUTbasic,"col");
+  pad2->cd(4);
+  DATA->Draw("U2res1:U2res0>>hU2Res2d",CUTbasic,"col");
 //DATA->Draw("U2res1:U2res0>>hU2Res2d","CUTpad1tof","col");
 
 }

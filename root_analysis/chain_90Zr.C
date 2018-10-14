@@ -3,8 +3,8 @@
   char name[128];
 
   // 90Zr
-  Int_t nrofruns=7;
-  Int_t run_no[128]={1095,1101,1106,1110,1116,1120,1126};
+  Int_t nrofruns=6;
+  Int_t run_no[128]={2158,2160,2162,2166,2168,2169};
 
 
   for(Int_t i=0;i<nrofruns;i++)	{

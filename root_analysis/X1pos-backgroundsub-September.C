@@ -15,11 +15,19 @@ TH1F *hExback2 = new TH1F("hExback2","Excitation energy",2000,0,800);
 TH1F *hExbacktot = new TH1F("hExbacktot","Excitation energy",2000,0,800);
 TH1F *hExdiff = new TH1F("hExdiff","Excitation energy",2000,0,800);
 
+//for 24Mg weekend 3
+
 DATAChain->Draw("X1posC >>hEx",CUTbasic && CUTlimits && CUTy,"");
 DATAChain->Draw("X1posC >>hExback1",CUTbasic && CUTlimits && CUTYbck1,"");
 DATAChain->Draw("X1posC >>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
-//DATAChain->Draw("X1posC >>hExbacktot",CUTbasic && CUTlimits && CUTybckg,"");
-//DATAChain->Draw("X1posC >>hExdiff", CUTbasic && CUTlimits && CUTybckgdiff,"");
+
+//for 24Mg weekend 2
+/*
+DATA->Draw("X1posC >>hEx",CUTbasic && CUTlimits && CUTy,"");
+DATA->Draw("X1posC >>hExback1",CUTbasic && CUTlimits && CUTYbck1,"");
+DATA->Draw("X1posC >>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
+*/
+
 
 /*
  * // Create 1 dimensional histograms for Position
@@ -53,23 +61,23 @@ hExback2->SetLineColor(3);
 hExdiff->SetLineColor(1);
 hExbacktot->SetLineColor(6);
 
-//hEx->Draw();
-hExdiff->Draw("");
-//hExback1->Draw("same");
-//hExback2->Draw("same");
-//hExbacktot->Draw("same");
+hEx->Draw();
+hExdiff->Draw("same");
+hExback1->Draw("same");
+hExback2->Draw("same");
+hExbacktot->Draw("same");
 
-/*
-auto legend = new TLegend(0.1,0.7,0.48,0.9);
-legend->SetHeader("The Legend Title","C"); // option "C" allows to center the header
-legend->AddEntry(hEx,"Raw data","l");
-legend->AddEntry(hExback1,"Background 1","l");
-legend->AddEntry(hExback2,"Background 2","l");
-legend->AddEntry(hExbacktot,"Total background","l");
-legend->AddEntry(hExdiff,"Background subtracted data","l");
-legend->SetLegendFont(20);
-legend->Draw();
-*/
+
+leg = new TLegend(0.1,0.7,0.48,0.9);
+//leg->SetHeader("Legend",""); // option "C" allows to center the header
+leg->AddEntry(hEx,"Raw data","l");
+leg->AddEntry(hExback1,"Background 1","l");
+leg->AddEntry(hExback2,"Background 2","l");
+leg->AddEntry(hExbacktot,"Total background","l");
+leg->AddEntry(hExdiff,"Background subtracted data","l");
+//leg->SetLegendFont(16);
+leg->Draw();
+
 
 
 }

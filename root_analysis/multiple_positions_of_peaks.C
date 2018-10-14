@@ -13,19 +13,20 @@
   Float_t high[nrofpeaks];
   Float_t ExNNDC[nrofpeaks];
 
-  /*
-  low[0]=680;   high[0]=686; //9.305 MeV
-  low[1]=648;   high[1]=652;
-  low[2]=637;   high[2]=642;
-  low[3]=612;   high[3]=617;
-  low[4]=606;   high[4]=611; //11.278 MeV
-  low[5]=601;   high[5]=606;
-  low[6]=538;   high[6]=550;
-  low[7]=495;   high[7]=505; //15.25 MeV
-  low[8]=480;   high[8]=488;
-  low[9]=442;   high[9]=454;
-  */
+  //24Mg for weekend 2
+  low[0]=687;   high[0]=690; //9.305 MeV
+  low[1]=654;   high[1]=658;
+  low[2]=643;   high[2]=648;
+  low[3]=618;   high[3]=622;
+  low[4]=612;   high[4]=615; //11.278 MeV
+  low[5]=607;   high[5]=611;
+  low[6]=544;   high[6]=552;
+  low[7]=500;   high[7]=506; //15.25 MeV
+  low[8]=487.6;   high[8]=492;
+  low[9]=448;   high[9]=457;
 
+//24Mg for weekend 3
+/*
   low[0]=679;   high[0]=686; //9.305 MeV
   low[1]=650;   high[1]=653;
   low[2]=637;   high[2]=643;
@@ -36,6 +37,7 @@
   low[7]=495;   high[7]=502; //15.25 MeV
   low[8]=482;   high[8]=487;
   low[9]=441;   high[9]=454;
+*/
 
   ExNNDC[0]=9.30539;
   ExNNDC[1]=11.7281;

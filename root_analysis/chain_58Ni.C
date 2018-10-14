@@ -3,8 +3,8 @@
   char name[128];
 
   // 58Ni
-  Int_t nrofruns=9;
-  Int_t run_no[128]={3072, 3084, 3092, 3100, 3109, 3116, 3128, 3137, 3145};
+  Int_t nrofruns=8;
+  Int_t run_no[128]={3084, 3092, 3100, 3109, 3116, 3128, 3137, 3145};
 
 
   for(Int_t i=0;i<nrofruns;i++)	{

@@ -7,9 +7,14 @@ c3->SetFillColor(0);
 c3->SetGridy(0);
 c3->SetFillColor(0);
 
-TCut CUTYbck1 = "Y1>-25 && Y1<-7";   
-TCut CUTYbck2 = "Y1>-43 && Y1<-25";  
+//for 24Mg weekend 3
+//TCut CUTYbck1 = "Y1>-25 && Y1<-7";   
+//TCut CUTYbck2 = "Y1>-43 && Y1<-25";  
  
+ //for 90Zr weekend 2
+TCut CUTYbck1 = "Y1>-28 && Y1<-12.5";   
+TCut CUTYbck2 = "Y1>-43.5 && Y1<-28";
+
 // Create 1 dimensional histograms for Position
 TH1F *hEx = new TH1F("hEx","Excitation energy",3000,0,30);
 TH1F *hExback1 = new TH1F("hExback1","Excitation energy",3000,0,30);
@@ -48,5 +53,14 @@ hExback1->Draw("same");
 hExback2->Draw("same");
 hExbacktot->Draw("same");
 
+leg = new TLegend(0.1,0.7,0.48,0.9);
+//leg->SetHeader("Legend",""); // option "C" allows to center the header
+leg->AddEntry(hEx,"Raw data","l");
+leg->AddEntry(hExback1,"Background 1","l");
+leg->AddEntry(hExback2,"Background 2","l");
+leg->AddEntry(hExbacktot,"Total background","l");
+leg->AddEntry(hExdiff,"Background subtracted data","l");
+//leg->SetLegendFont(16);
+leg->Draw();
 
 }

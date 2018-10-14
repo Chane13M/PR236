@@ -22,12 +22,14 @@ TCut CUTlimits = "X1pos>-100";
 TCut CUTtrigvsCI = "triggerI/CII<3";
 
 //uncomment depending on isotope all are for weekend 1
-//values for 26Mg
+//values for 24Mg for weekend 2
 /*
-TCut CUTy = "Y1>-10 && Y1<22";
-TCut CUTyback1 = "Y1<-10 && Y1>-25";
-TCut CUTyback2 = "Y1<-25 && Y1>-40";     
-TCut CUTybckg = "Y1>-40 && Y1<-10"; //will use this when doing a background subtraction
+TCut CUTy = "Y1>-3 && Y1<21"; //18
+TCut CUTYbck1 = "Y1<-3 && Y1>-22"; //18
+TCut CUTYbck2 = "Y1<-22 && Y1>-41"; //18
+TCut CUTybckg = "Y1>-41 && Y1<-3"; //36
+TCut CUTyback2 = "Y1<-22 && Y1>-41";
+TCut CUTyback1 = "Y1<-3 && Y1>-22";
 */
 
 //values for 58Ni
@@ -38,13 +40,13 @@ TCut CUTyback2 = "Y1<-27 && Y1>-42";
 TCut CUTybckg = "Y1>-42 && Y1<-12"; //will use this when doing a background subtraction      
 */
 
-//values for 90Zr
-/*
-TCut CUTy = "Y1>-12 && Y1<24";
-TCut CUTyback1 = "Y1<-12 && Y1>-27";
-TCut CUTyback2 = "Y1<-27 && Y1>-42";     
-TCut CUTybckg = "Y1>-42 && Y1<-12"; //will use this when doing a background subtraction      
-*/
+//values for 90Zr weekend 2
+TCut CUTy = "Y1>-12.5 && Y1<16.5"; //18
+TCut CUTYbck1 = "Y1<-12.5 && Y1>-28"; //18
+TCut CUTYbck2 = "Y1<-28 && Y1>-43.5"; //18
+TCut CUTybckg = "Y1>-12.5 && Y1<-43.5"; //36
+TCut CUTyback2 = "Y1<-28 && Y1>-43.5";
+TCut CUTyback1 = "Y1<-12.5 && Y1>-28";      
 
 //values for 24Mg for weekend 3 background
 /*
@@ -63,12 +65,14 @@ TCut CUTybckg = "Y1>-3 && Y1<-43";
 */
 
 //values for weekend 3 with 24 mg runs
+/*
 TCut CUTy = "Y1>-7 && Y1<22"; //15
 TCut CUTYbck1 = "Y1<-7 && Y1>-25"; //18
 TCut CUTYbck2 = "Y1<-25 && Y1>-43"; //18
-TCut CUTybckg = "Y1>-7 && Y1<-43"; //36
+TCut CUTybckg = "Y1>-43 && Y1<-7"; //36
 TCut CUTyback2 = "Y1<-25 && Y1>-43";
 TCut CUTyback1 = "Y1<-7 && Y1>-25";
+*/
 
 //58Ni for chained data
 /*
