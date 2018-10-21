@@ -16,16 +16,16 @@ TH1F *hExbacktot = new TH1F("hExbacktot","Excitation energy",2000,0,800);
 TH1F *hExdiff = new TH1F("hExdiff","Excitation energy",2000,0,800);
 
 //for 24Mg weekend 3
+/*
 DATAChain->Draw("X1posC >>hEx",CUTbasic && CUTlimits && CUTy,"");
 DATAChain->Draw("X1posC >>hExback1",CUTbasic && CUTlimits && CUTYbck1,"");
 DATAChain->Draw("X1posC >>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
+*/
 
 //for 24Mg weekend 2
-/*
 DATA->Draw("X1posC >>hEx",CUTbasic && CUTlimits && CUTy,"");
 DATA->Draw("X1posC >>hExback1",CUTbasic && CUTlimits && CUTYbck1,"");
 DATA->Draw("X1posC >>hExback2",CUTbasic && CUTlimits && CUTYbck2,"");
-*/
 
 
 /*

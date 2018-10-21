@@ -6,7 +6,7 @@
     //////////////////////////////////////////////////////////////////////////////////////////////////////
   char name[128];
 
-  int nrofpeaks=10;
+  int nrofpeaks=16;
   Float_t peakposition[nrofpeaks];
   Float_t sigma[nrofpeaks];
   Float_t low[nrofpeaks];
@@ -19,11 +19,17 @@
   low[2]=643;   high[2]=648;
   low[3]=617;   high[3]=622;
   low[4]=611;   high[4]=615; //11.278 MeV
-  low[5]=607;   high[5]=611;
-  low[6]=543;   high[6]=554;
+  low[5]=578;   high[5]=582;
+  low[6]=527;   high[6]=530;
   low[7]=500;   high[7]=506; //15.25 MeV
   low[8]=487;   high[8]=493;
   low[9]=447;   high[9]=458;
+  low[10]=437;  high[10]=443;
+  low[11]=426;  high[11]=431;
+  low[12]=627;  high[12]=633;
+  low[13]=561;  high[13]=565;
+  low[14]=568;  high[14]=573;
+  low[15]=517;  high[15]=520; 
 
 //24Mg for weekend 3
 /*
@@ -49,6 +55,11 @@
   ExNNDC[7]=4;
   ExNNDC[8]=3;
   ExNNDC[9]=2;
+  ExNNDC[10]=1;
+  ExNNDC[11]=0;
+  ExNNDC[12]=15;
+  ExNNDC[13]=16;
+  ExNNDC[14]=17;
 
   for(Int_t i=0;i<nrofpeaks;i++){
     sprintf(name,"hExdiff->Fit(\"gaus\",\"\",\"\",%f,%f);",low[i],high[i]);
