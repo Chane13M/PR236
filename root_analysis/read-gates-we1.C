@@ -33,12 +33,14 @@ TCut CUTyback1 = "Y1<-3 && Y1>-22";
 */
 
 //values for 90Zr weekend 2
+/*
 TCut CUTy = "Y1>-12.5 && Y1<16.5"; //18
 TCut CUTYbck1 = "Y1<-12.5 && Y1>-28"; //18
 TCut CUTYbck2 = "Y1<-28 && Y1>-43.5"; //18
 TCut CUTybckg = "Y1>-12.5 && Y1<-43.5"; //36
 TCut CUTyback2 = "Y1<-28 && Y1>-43.5";
 TCut CUTyback1 = "Y1<-12.5 && Y1>-28";
+*/
       
 
 //values for weekend 3 with 24 mg runs
@@ -52,13 +54,11 @@ TCut CUTyback1 = "Y1<-7 && Y1>-25";
 */
 
 //for 58Ni from weekend 3
-/*
 TCut CUTy = "Y1>-10 && Y1<22"; //15
 TCut CUTYbck1 = "Y1<-10 && Y1>-20"; //18
 TCut CUTYbck2 = "Y1<-20 && Y1>-30"; //18
 TCut CUTybckg = "Y1>-30 && Y1<-10"; //36
 TCut CUTyback2 = "Y1<-20 && Y1>-30";
 TCut CUTyback1 = "Y1<-10 && Y1>-20";
-*/
 
 }
