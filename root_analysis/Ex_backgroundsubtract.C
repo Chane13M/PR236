@@ -8,16 +8,16 @@ c3->SetGridy(0);
 c3->SetFillColor(0);
 
 //for 24Mg weekend 3
-//TCut CUTYbck1 = "Y1>-25 && Y1<-7";   
-//TCut CUTYbck2 = "Y1>-43 && Y1<-25";  
+TCut CUTYbck1 = "Y1>-25 && Y1<-7";   
+TCut CUTYbck2 = "Y1>-43 && Y1<-25";  
  
  //for 90Zr weekend 2
 //TCut CUTYbck1 = "Y1>-28 && Y1<-12.5";   
 //TCut CUTYbck2 = "Y1>-43.5 && Y1<-28";
 
 //for 58Ni weekend 3
-TCut CUTYbck1 = "Y1>-20 && Y1<-10";
-TCut CUTYbck2 = "Y1>-30 && Y1<-20";
+//TCut CUTYbck1 = "Y1>-20 && Y1<-10";
+//TCut CUTYbck2 = "Y1>-30 && Y1<-20";
 
 //for 24Mg weekend 2
 //TCut CUTYbck1 = "Y1<-3 && Y1>-22";
