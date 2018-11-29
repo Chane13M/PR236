@@ -1,0 +1,16 @@
+
+Run in Matlab command window
+
+
+rebin_fold_new('Ca-11deg-correc.dat','ca40_11deg_10kev_new1.dat',0,30,0.01,0.05)
+
+
+Parameters are Input_file,Output_file,Ex_min,Ex_max,bin_size[,Folding_fwhm].
+
+ 
+
+rebin_fold('Cobus_paper_Fig_3.dat','Cobus_paper_Fig_3-counts_10keV.dat',17.260,23.000)
+
+
+
+rebin_fold('datafile-152Sm-DDCS-10keV-35keV.dat','datafile-152Sm-DDCS-10keV-80keV.dat',8.605,24.705,0.010,0.080)

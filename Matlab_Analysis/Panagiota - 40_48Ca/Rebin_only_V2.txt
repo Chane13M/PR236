@@ -1,0 +1,14 @@
+
+Run in Matlab command window
+
+
+rebin_only_V2('40Ca-We4.dat','ca40_0deg-we4.dat',0,35,0.01)
+
+Parameters are Input_file,Output_file,Ex_min,Ex_max,bin_size.
+
+
+rebin_only_V2('Ca40_SLy4_1m_NoCont_8-26MeV_5keV.txt','Ca40_SLy4_1m_NoCont_12-24MeV_10keV.dat',12.000,24.000,0.010)
+
+rebin_only_V2('Ca48_SLy4_1m_NoCont_8-26MeV_5keV.txt','Ca48_SLy4_1m_NoCont_12-24MeV_10keV.dat',12.000,24.000,0.010)
+
+
