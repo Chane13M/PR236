@@ -6,21 +6,9 @@ c3->SetFillColor(0);
 c3->SetGridy(0);
 c3->SetFillColor(0);
 
-//for 24Mg weekend 3
-//TCut CUTYbck1 = "Y1>-25 && Y1<-7";   
-//TCut CUTYbck2 = "Y1>-43 && Y1<-25";  
- 
- //for 90Zr weekend 2
-TCut CUTYbck1 = "Y1>-28 && Y1<-12.5";   
-TCut CUTYbck2 = "Y1>-43.5 && Y1<-28";
-
 //for 58Ni weekend 3
-//TCut CUTYbck1 = "Y1>-20 && Y1<-10";
-//TCut CUTYbck2 = "Y1>-30 && Y1<-20";
-
-//for 24Mg weekend 2
-//TCut CUTYbck1 = "Y1<-3 && Y1>-22";
-//TCut CUTYbck2 = "Y1<-22 && Y1>-41";
+TCut CUTYbck1 = "Y1>-20 && Y1<-10";
+TCut CUTYbck2 = "Y1>-30 && Y1<-20";
 
 // Create 1 dimensional histograms for Position
 TH1F *hEx = new TH1F("hEx","Excitation energy",3000,0,30);
@@ -33,7 +21,7 @@ DATAChain->Draw("Ex>>hEx",CUTbasic && CUTflags && CUTlimits && CUTy,"");
 DATAChain->Draw("Ex>>hExback2",CUTbasic && CUTflags && CUTlimits && CUTYbck1,"");
 DATAChain->Draw("Ex>>hExback1",CUTbasic && CUTflags && CUTlimits && CUTYbck2,"");
 
-hExdiff->SetTitle("^{90}Zr(#alpha,#alpha) at 0^{o} (background subtracted)");
+hExdiff->SetTitle("^{58}Ni(#alpha,#alpha) at 0^{o} (background subtracted)");
 hExdiff->SetStats(0);
 hExdiff->GetXaxis()->SetTitle("E_{x} (MeV)");
 hExdiff->GetXaxis()->CenterTitle(true);
@@ -72,22 +60,22 @@ leg->Draw();
 
 //==============================================
 // Uncomment the following to obtain double differential cross sections 
- /* 
-TH1F *hExCs = new TH1F("hExCs","^{150}Sm Cross-section Excitation energy",3100,-1.,30.);
+
+TH1F *hExCs = new TH1F("hExCs","^{58}Ni Cross-section Excitation energy",3000,0.,30.);
 hExCs->Add(hExdiff);
 hExCs->GetXaxis()->SetTitle("E_{x} (MeV)");
 hExCs->GetXaxis()->CenterTitle(true);
 hExCs->GetYaxis()->SetTitle("(mb/sr.MeV)");
 hExCs->GetYaxis()->CenterTitle(true);
 SA = 3.48; // msr  
-cii = 7792458; 
-tgtthick = 0.9; // mg/cm^2 
-A=90;
+cii = 12593901; 
+tgtthick = 0.7; // mg/cm^2 
+A=58;
 e=1.60217733;
-eff=0.7557;
+eff=0.7493;
 range=6;
 NA=6.0221367;
-elecdead=0.99817324; 
+elecdead=0.997839977; 
 ebin=0.01;
 incidentflux=(cii*range)/e;
 scatterers=(tgtthick*NA)/A;
@@ -100,22 +88,20 @@ cout <<"temp = "<< temp << endl;
 hExCs->Scale(1000/norm);
 hExCs->Draw();
 //==================================================
-*/
 
-//TH1F *hExSm150 = new TH1F("hExSm150","Excitation energy",3100,-1.,30.);
-//hExSm150 = hExdiff;
+TH1F *hExNi58 = new TH1F("hExNi58","Excitation energy",3000,0.,30.);
+hExNi58 = hExdiff;
 
 //Output a data file in PWD
 
-/*
+
  ofstream out;
-  out.open("datafile-150Sm-ExCs-pExCalib");
+  out.open("datafile-58Ni-ExCs.dat"); //replace name_of_isotope as appropriate
   float lut;
   Int_t nbins = hExCs->GetNbinsX();
   // Now write to a datafile
   for(Int_t i=0;i<nbins;i++) {
-    out << i << "  " << hExCs->GetBinContent(i)  << endl;
+    out << hExCs->GetBinCenter(i) << "  " << hExCs->GetBinContent(i)  << endl;
   }
   out.close();
-*/
 }
