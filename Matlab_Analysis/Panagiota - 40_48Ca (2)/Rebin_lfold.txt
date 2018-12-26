@@ -1,0 +1,13 @@
+
+Run in Matlab command window
+
+
+rebin_lfold('0.dat','0_10kev_l50.dat',0,30,0.01,0.05)
+
+
+Parameters are Input_file,Output_file,Ex_min,Ex_max,bin_size[,Folding_fwhm=gamma].
+ 
+This uses a Lorentian smoothing function
+
+
+rebin_lfold('146Nd_K0_bin20keV_fold40keV.dat','146Nd_K0_bin20keV_fold2000keV.dat',0,30,0.02,2.000)

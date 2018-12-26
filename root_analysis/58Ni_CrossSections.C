@@ -57,7 +57,23 @@ leg->AddEntry(hExbacktot,"Total background","l");
 leg->AddEntry(hExdiff,"Background subtracted data","l");
 //leg->SetLegendFont(16);
 leg->Draw();
+/*
+TH1F *hExNi58 = new TH1F("hExNi58","Excitation energy",3000,0.,30.);
+hExNi58 = hExdiff;
 
+//Output a data file in PWD
+
+
+ ofstream out;
+  out.open("datafile-58Ni-ExCounts.dat"); //replace name_of_isotope as appropriate
+  float lut;
+  Int_t nbins = hExNi58->GetNbinsX();
+  // Now write to a datafile
+  for(Int_t i=0;i<nbins;i++) {
+    out << hExNi58->GetBinCenter(i) << "  " << hExNi58->GetBinContent(i)  << endl;
+  }
+  out.close();
+*/
 //==============================================
 // Uncomment the following to obtain double differential cross sections 
 
@@ -88,7 +104,7 @@ cout <<"temp = "<< temp << endl;
 hExCs->Scale(1000/norm);
 hExCs->Draw();
 //==================================================
-
+/*
 TH1F *hExNi58 = new TH1F("hExNi58","Excitation energy",3000,0.,30.);
 hExNi58 = hExdiff;
 
@@ -104,4 +120,5 @@ hExNi58 = hExdiff;
     out << hExCs->GetBinCenter(i) << "  " << hExCs->GetBinContent(i)  << endl;
   }
   out.close();
+  */
 }

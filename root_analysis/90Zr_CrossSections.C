@@ -58,9 +58,25 @@ leg->AddEntry(hExdiff,"Background subtracted data","l");
 //leg->SetLegendFont(16);
 leg->Draw();
 
+TH1F *hExZr90 = new TH1F("hExZr90","Excitation energy",3000,0.,30.);
+hExZr90 = hExdiff;
+
+//Output a data file in PWD
+
+
+ ofstream out;
+  out.open("datafile-90Zr-ExCounts.dat"); //replace name_of_isotope as appropriate
+  float lut;
+  Int_t nbins = hExZr90->GetNbinsX();
+  // Now write to a datafile
+  for(Int_t i=0;i<nbins;i++) {
+    out << hExZr90->GetBinCenter(i) << "  " << hExZr90->GetBinContent(i)  << endl;
+  }
+  out.close();
+
 //==============================================
 // Uncomment the following to obtain double differential cross sections 
-
+/*
 TH1F *hExCs = new TH1F("hExCs","^{90}Zr Cross-section Excitation energy",3000,0.,30.);
 hExCs->Add(hExdiff);
 hExCs->GetXaxis()->SetTitle("E_{x} (MeV)");
@@ -104,4 +120,5 @@ hExZr90 = hExdiff;
     out << hExCs->GetBinCenter(i) << "  " << hExCs->GetBinContent(i)  << endl;
   }
   out.close();
+  */
 }
