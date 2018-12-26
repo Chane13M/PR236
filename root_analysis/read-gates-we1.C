@@ -23,14 +23,12 @@ TCut CUTtrigvsCI = "triggerI/CII<3";
 
 //uncomment depending on isotope all are for weekend 1
 //values for 24Mg for weekend 2
-/*
 TCut CUTy = "Y1>-3 && Y1<21"; //18
 TCut CUTYbck1 = "Y1<-3 && Y1>-22"; //18
 TCut CUTYbck2 = "Y1<-22 && Y1>-41"; //18
 TCut CUTybckg = "Y1>-41 && Y1<-3"; //36
 TCut CUTyback2 = "Y1<-22 && Y1>-41";
 TCut CUTyback1 = "Y1<-3 && Y1>-22";
-*/
 
 //values for 90Zr weekend 2
 /*
@@ -55,13 +53,14 @@ TCut CUTyback1 = "Y1<-7 && Y1>-25";
 */
 
 //for 58Ni from weekend 3
-
+/*
 TCut CUTy = "Y1>-10 && Y1<22"; //15
 TCut CUTYbck1 = "Y1<-10 && Y1>-20"; //18
 TCut CUTYbck2 = "Y1<-20 && Y1>-30"; //18
 TCut CUTybckg = "Y1>-30 && Y1<-10"; //36
 TCut CUTyback2 = "Y1<-20 && Y1>-30";
 TCut CUTyback1 = "Y1<-10 && Y1>-20";
+*/
 
 
 
