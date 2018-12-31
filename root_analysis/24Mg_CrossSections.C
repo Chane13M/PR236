@@ -92,7 +92,7 @@ hExCs->Draw();
 
 TH1F *hExMg24 = new TH1F("hExMg24","Excitation energy",3000,0.,30.);
 hExMg24 = hExdiff;
-
+/*
 //Output a data file in PWD
 
 
@@ -105,5 +105,6 @@ hExMg24 = hExdiff;
     out << hExCs->GetBinCenter(i) << "  " << hExCs->GetBinContent(i)  << endl;
   }
   out.close();
+*/
 
 }

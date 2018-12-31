@@ -13,17 +13,15 @@ c1->SetFillColor(0);
 //TCut CUTYbck2 = "Y1>22 && Y1<35";  
 
 //cuts for 24Mg weekend 3
-/*
-TCut CUTy = "Y1>-4 && Y1<25";
-TCut CUTYbck1 = "Y1<-4 && Y1>-24";
-TCut CUTYbck2 = "Y1<-24 && Y1>-44";
+TCut CUTy = "Y1>-5 && Y1<220";
+TCut CUTYbck1 = "Y1<-5 && Y1>-20";
+TCut CUTYbck2 = "Y1<-20 && Y1>-35";
 //TCut CUTYbckg = "Y1>-40 && Y1<-4";
-*/
-
+/*
 TCut CUTy = "Y1>-3 && Y1<24"; //21
 TCut CUTYbck1 = "Y1<-3 && Y1>-43"; //40
 TCut CUTYbck2 = "Y1<37 && Y1>24"; //13
-
+*/
 // Create 1 dimensional histograms
 
 TH1F *hX1pos = new TH1F("hX1pos","X1 position",3000,0.,30.);
@@ -32,9 +30,9 @@ TH1F *hX1back2 = new TH1F("hX1back2","X1 position",3000,0.,30.);
 TH1F *hX1backtot = new TH1F("hX1backtot","X1 position",3000,0.,30.);
 TH1F *hX1diff = new TH1F("hX1diff","X1 position",3000,0.,30.);
 
-DATA->Draw("X1pos>>hX1pos",CUTbasic && CUTlimits && CUTy,"col");
-DATA->Draw("X1pos>>hX1back1",CUTbasic && CUTlimits && CUTYbck1,"col");
-DATA->Draw("X1pos>>hX1back2",CUTbasic && CUTlimits && CUTYbck2,"col");
+DATAChain->Draw("X1pos>>hX1pos",CUTbasic && CUTlimits && CUTy,"col");
+DATAChain->Draw("X1pos>>hX1back1",CUTbasic && CUTlimits && CUTYbck1,"col");
+DATAChain->Draw("X1pos>>hX1back2",CUTbasic && CUTlimits && CUTYbck2,"col");
 
 hX1diff->SetTitle("24Mg(#alpha,#alpha) at 0^{o}"); // (background subtracted)");
 hX1diff->SetStats(0);

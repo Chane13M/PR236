@@ -1,7 +1,7 @@
 %=========================================================================
 % 58Ni ISGMR
 
-fname='58Ni_ExCs_10_24_10kev.dat'
+fname='58Ni_ExCs_10_24_10kev_DWT_Subtracted.dat'
 
 [ex_src,fname_taken]=read_dat(fname,1); % take 1st column
 [cnts_src,fname_taken]=read_dat(fname,2); % take 2nd column

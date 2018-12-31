@@ -76,7 +76,7 @@ hExZr90 = hExdiff;
 
 //==============================================
 // Uncomment the following to obtain double differential cross sections 
-/*
+
 TH1F *hExCs = new TH1F("hExCs","^{90}Zr Cross-section Excitation energy",3000,0.,30.);
 hExCs->Add(hExdiff);
 hExCs->GetXaxis()->SetTitle("E_{x} (MeV)");
@@ -109,7 +109,7 @@ TH1F *hExZr90 = new TH1F("hExZr90","Excitation energy",3000,0.,30.);
 hExZr90 = hExdiff;
 
 //Output a data file in PWD
-
+ /*
 
  ofstream out;
   out.open("datafile-90Zr-ExCs.dat"); //replace name_of_isotope as appropriate
