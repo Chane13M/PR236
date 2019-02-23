@@ -67,6 +67,7 @@ hExCs->GetXaxis()->SetTitle("E_{x} (MeV)");
 hExCs->GetXaxis()->CenterTitle(true);
 hExCs->GetYaxis()->SetTitle("(mb/sr.MeV)");
 hExCs->GetYaxis()->CenterTitle(true);
+/*
 SA = 3.48; // msr  
 cii = 19065377; 
 tgtthick = 0.23; // mg/cm^2 
@@ -88,16 +89,16 @@ cout <<"temp = "<< temp << endl;
 hExCs->Scale(1000/norm);
 hExCs->Draw();
 //==================================================
-
+*/
 
 TH1F *hExMg24 = new TH1F("hExMg24","Excitation energy",3000,0.,30.);
 hExMg24 = hExdiff;
-/*
+
 //Output a data file in PWD
 
 
  ofstream out;
-  out.open("datafile-24Mg-ExCs.dat"); //replace name_of_isotope as appropriate
+  out.open("datafile-24Mg-ExCounts.dat"); //replace name_of_isotope as appropriate
   float lut;
   Int_t nbins = hExCs->GetNbinsX();
   // Now write to a datafile
@@ -105,6 +106,6 @@ hExMg24 = hExdiff;
     out << hExCs->GetBinCenter(i) << "  " << hExCs->GetBinContent(i)  << endl;
   }
   out.close();
-*/
+
 
 }
